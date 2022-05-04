@@ -1,0 +1,129 @@
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.nav-link-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr .5fr;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  z-index: 2;
+  height: 55px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0);
+
+
+  .nav-bar-logo {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 25px;
+    color: #fff;
+    position: sticky;
+    bottom: 90vh;
+  }
+
+  .nav-bar-icon {
+    color: #fff;
+    margin-left: 72px;
+    font-size: 22px;
+    grid-column: 3;
+    position: sticky;
+    bottom: 92vh;
+  }
+
+
+  .nav-bar-wrapper {
+    display: grid;
+    justify-content: flex-end;
+    grid-column: 4;
+    grid-template-columns: .2fr .2fr .2fr;
+    position: sticky;
+    bottom: 92vh;
+
+    a {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: .5s ease-in-out;
+      color: rgb(255, 255, 255);
+      // padding: 7px;
+
+
+      &:hover {
+        
+        color: rgb(153, 114, 15);
+      }
+    }
+  }
+
+  .nav-bar-menu-icon {
+    color: #fff;
+    position: absolute;
+    right: 25px;
+    font-size: 32px;
+    grid-column: 5;
+
+    &:hover {
+      color: rgb(153, 114, 15);
+    }
+  }
+
+
+
+
+  // .sign-out-wrapper {
+  //   cursor: pointer;
+  //   margin-left: 10px;
+  //   color: rgba(86, 19, 112, 0.9);
+  //   transition: .5s ease-in-out;
+
+
+  //   &:hover {
+  //     text-decoration: line-through;
+  //   }
+  // }
+
+  .nav-bar-active-hover {
+    background-color: rgba(83, 81, 81,.9);
+    height: 100vh;
+    width: 250px;
+    // position: relative;
+    color: #fff;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+  }
+}

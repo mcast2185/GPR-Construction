@@ -1,0 +1,57 @@
+.contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53vh;
+  width: 21vw;
+  border-radius: 5px;
+  background-color: rgba(134, 149, 163, .1);
+
+
+  .name-wrapper {
+    padding: 5px;
+
+    .input-bar {
+      width: 15vw;
+    }
+  }
+
+  .email-wrapper {
+    padding: 5px;
+
+    .input-bar {
+      width: 15vw;
+    }
+  }
+
+  .phone-number-wrapper {
+    padding: 5px;
+
+    .input-bar {
+      width: 15vw;
+    }
+  }
+
+  .message-wrapper {
+    padding: 5px;
+
+    .message-bar {
+      height: 80px;
+      width: 15vw;
+    }
+  }
+
+  .btn {
+    margin-left: 6vw;
+    padding: 5px;
+    border: 1px solid rgb(153, 114, 15);
+    transition: 1s ease-in-out;
+
+    &:hover {
+      transition: 1s ease-in-out;
+      background-color: rgb(153, 114, 15);
+      color: #fff;
+      border: 1px solid rgb(37, 37, 37);
+    }
+  }
+}

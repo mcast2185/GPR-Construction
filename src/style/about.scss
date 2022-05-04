@@ -1,0 +1,84 @@
+@keyframes header {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about-container-header {
+  background-image: url("../static/assets/sudoGPReight.jpg");
+  border: 1px solid rgb(153, 114, 15);
+  height: 400px;
+  width: 100vw;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  filter: brightness(40%);
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: header 1.5s ease-in;
+    font-size: 65px;
+    width: 250px;
+    border-bottom: .5px solid rgb(153, 114, 15);
+  }
+
+  h5 {
+    padding: 20px;
+  }
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  .service-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .text-box {
+      padding: 20px;
+      height: 35vh;
+      width: 25vw;
+    }
+
+    img {
+      height: 40vh;
+      width: 32vw;
+    }
+  }
+
+  .service-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    img {
+      height: 40vh;
+      width: 32vw;
+    }
+
+    .text-box {
+      padding: 20px;
+      height: 35vh;
+      width: 25vw;
+    }
+  }
+}
