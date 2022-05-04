@@ -1,7 +1,7 @@
 # GPR construction website
 
 > Created as an example site to display my knowledge regarding React JS.
-> This site is intended for future commercial use so some links may not yet lead to their intended pages.
-> Thank you for patiently waiting as I collect the remainder of the data needed before making this site mobile responsive.
+> For this website, I aimed to bring external libraries in to further add to the site as well as my knowledge on JS.
+> This site will be used commercially, soon, which is why the site is still being worked on from many angles.
 
 *Implemented the use of react-bootstrap as well as emailJS to create a professionally aesthetic experience*
